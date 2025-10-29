@@ -1,7 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.container {
+  display: flex;
 }
 
 .sidebar {
@@ -13,6 +11,8 @@
   width: 300px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+  overflow-y: auto;
 }
 
 .profile-id {
@@ -40,6 +40,11 @@
   padding: 8px;
   border-radius: 22px;
   text-align: center;
+}
+
+.profile-id a:hover {
+  background-color: #149ddd;
+  transition: 0.3s;
 }
 
 #profile-image {
@@ -87,3 +92,4 @@
 .fa-circle-chevron-down {
   margin-left: 64px;
 }
+

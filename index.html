@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="./styles/sidebar.css" />
     <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/hero.css">
 
     <link
       rel="stylesheet"
@@ -39,79 +40,84 @@
   </head>
 
   <body style="padding-bottom: 3000px;">
-    <section>
-      <div class="header sidebar">
-        <!-- Profile ID -->
-        <div class="profile-id">
-          <div>
-            <img
-              id="profile-image"
-              src="./img/my-profile-img.jpg"
-              alt="Profile picture"
-            />
-            <p>Alex Smith</p>
+    <div class="container">
+        <div class="header sidebar">
+      
+          <div class="profile-id">
+            <div>
+              <img id="profile-image" src="./img/my-profile-img.jpg" alt="Profile picture" />
+              <p>Alex Smith</p>
+            </div>
+            <div class="social-link">
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-skype"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
           </div>
-          <div class="social-link">
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-skype"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-        </div>
-
-        <!-- Tabs -->
-        <div class="tabs">
-          <div>
-            <a href="">
-              <i class="fa-solid fa-house-chimney"></i>
-              <span class="active">Home</span>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-solid fa-user-tie"></i>
-              <span>About</span>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-solid fa-file"></i>
-              <p>Resume</p>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-solid fa-briefcase"></i>
-              <p>Portfolio</p>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-solid fa-server"></i>
-              <p>Services</p>
-            </a>
-          </div>
-          <div class="dropdown">
-            <a href="">
-              <i class="fa-solid fa-database"></i>
-              <p>
-                Dropdown
-                <span><i class="fa-solid fa-circle-chevron-down">
-                </i></span>
-              </p>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-solid fa-envelope"></i>
-              <p>Contact</p>
-            </a>
+      
+         
+          <div class="tabs">
+            <div>
+              <a href="">
+                <i class="fa-solid fa-house-chimney"></i>
+                <span class="active">Home</span>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-solid fa-user-tie"></i>
+                <span>About</span>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-solid fa-file"></i>
+                <p>Resume</p>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-solid fa-briefcase"></i>
+                <p>Portfolio</p>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-solid fa-server"></i>
+                <p>Services</p>
+              </a>
+            </div>
+            <div class="dropdown">
+              <a href="">
+                <i class="fa-solid fa-database"></i>
+                <p>
+                  Dropdown
+                  <span><i class="fa-solid fa-circle-chevron-down">
+                    </i></span>
+                </p>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Contact</p>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="hero"></section>
+      
+      <main class="main-content">
+        <section class="hero">
+          <img src="./img/hero-bg.jpg" alt="Hero Image" class="hero-bg">
+          <div class="hero-display">
+            <h1>Alex Smith</h1>
+            <p>I'm Develper</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    
   </body>
 </html>
