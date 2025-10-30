@@ -80,18 +80,29 @@
   align-items: center;
   padding: 18px 15px;
   gap: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .tabs a .active {
   color: white;
 }
 
-.tabs .fa-solid {
-  color: rgb(168, 169, 180);
+.tabs .fa-light {
   font-size: 18px;
+  color: rgb(175, 33, 33);
+}
+
+.tabs a:hover {
+  color: #149ddd;
+}
+
+.tabs a .fa-light, .tabs a span {
+  transition: color 0.3s ease;
 }
 
 .fa-circle-chevron-down {
   margin-left: 64px;
 }
+
 

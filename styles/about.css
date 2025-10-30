@@ -1,0 +1,217 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  margin-left: 10rem;
+}
+
+
+/* .section h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+} */
+
+/* .section h2:after {
+  content: "";
+  position: absolute;
+  background-color: #149ddd;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+} */
+
+.about p {
+   color: rgb(39, 40, 41);
+   font-size: 16px;
+   font-family: "Roboto",sans-serif;
+}
+
+.about-heading p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: rgb(39, 40, 41);
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  width: 90%;
+  line-height: 1.5rem;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-details h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+#profile-data img {
+  width: 26rem;
+  height: auto;
+}
+
+#profile-data h2{
+  font-size: 24px;
+}
+
+#profile-data {
+  display: flex;
+  gap: 2rem;
+}
+
+#profile-data p {
+  font-style: italic;
+}
+
+#profile-data p:nth-of-type(2){
+  width: 52rem;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+.info-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.info-container li {
+  list-style: none;
+}
+
+.info-column {
+  flex: 1;
+  max-width: 45%;
+}
+
+.info-column li {
+  font-family: "Roboto", sans-serif;
+  color: rgb(39, 40, 41);
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.info-column a{
+  text-decoration: none;
+  color: #149ddd;
+}
+
+.info-column .fa-chevron-right {
+  color: #149ddd;
+}
+
+.project-counts {
+  display: flex;
+  gap: 8rem;
+  padding: 60px 0;
+  margin-top: 60px;
+}
+
+.project-count {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.project-count .fa-light {
+  font-size: 44px;
+  color: #149ddd;
+  line-height: 1.7;
+}
+
+
+.project-count span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.4;
+}
+
+.project-count p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #27282999;
+  line-height: 1.5;
+}
+
+ .skill-container {
+  background-color: #f4fafd;
+  display: flex;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  gap: 2rem;
+}
+
+.progress-bar .html {
+  width: 100%;
+}
+
+.progress-bar .css {
+  width: 90%;
+}
+
+.progress-bar .javascript {
+  width: 75%;
+}
+
+.progress-bar .php {
+  width: 80%;
+}
+
+.progress-bar .wordpress {
+  width: 90%;
+}
+
+.progress-bar .photoshop {
+  width: 55%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: lightgray;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #149ddd;
+  height: 100%;
+  width: 0;
+  transition: width 1s ease;
+  animation: fill 2s ease forwards;
+}
+
+
+/* Define animation keyframes */
+@keyframes fill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target-width);
+  }
+}
+
+/* Set custom widths using CSS variables */
+.html, .progress { --target-width: 100%; }
+.css .progress { --target-width: 90%; }
+.javascript .progress { --target-width: 75%; }
+.wordpress .progress { --target-width: 90%; }
+.php .progress { --target-width: 80%; }
+.photoshop .progress { --target-width: 55%; }
